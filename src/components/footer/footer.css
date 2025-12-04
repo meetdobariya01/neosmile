@@ -1,0 +1,52 @@
+.footer-section {
+  background: #f8f4ef;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #b48b62;
+}
+
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: auto;
+}
+
+.logo-title {
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.sub-title {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #6e6e6e;
+}
+
+.social-icon {
+  font-size: 40px;
+  background: #d9a777;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #b38c5a;
+}
