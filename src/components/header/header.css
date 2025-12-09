@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap");
+
+
+/* root header area - transparent so hero shows through */
+.site-header {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  color: #060505;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f4ef;
+}
+
+/* top row container */
+.header-inner {
+  padding: 18px 0;
+}
+
+/* main row */
+.header-row {
+  align-items: center;
+  gap: 20px;
+}
+
+/* LEFT side (call + location) */
+.left-side {
+  width: 220px;
+  padding-left: 40px;
+}
+
+.left-item {
+  color: #0b0a0a;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  margin-bottom: 8px;
+  opacity: 0.95;
+  font-size: smaller;
+}
+
+.left-item .left-icon {
+  font-size: 18px;
+  color: #0c0b0b;
+  opacity: 0.95;
+}
+
+/* BRAND CENTER */
+.brand-wrap {
+  flex: 1 1 auto;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 74px; /* adjust to match screenshot */
+  height: auto;
+}
+
+.brand-text {
+  color: #090909;
+  font-size: 36px;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+/* RIGHT side */
+.right-side {
+  width: 320px;
+  padding-right: 40px;
+}
+
+.icons {
+  gap: 20px;
+}
+
+.icon {
+  color: #100f0f;
+  font-size: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+/* inline call on right */
+.call-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #0a0a0a;
+  margin-right: 14px;
+}
+
+.inline-phone {
+  font-size: 18px;
+}
+
+.call-number {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* BOOK BTN */
+.book-btn {
+  border: 2px solid rgba(9, 9, 9, 0.85);
+  background: #c6c7c8;
+  color: #030303;
+  padding: 12px 26px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+.book-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* cart badge */
+.pos-rel {
+  position: relative;
+}
+.cart-badge {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  background: #f0e7d6;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* CENTER MENU (beneath logo) */
+.center-menu {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+}
+
+.menu-list .menu-item {
+  margin: 0 30px;
+}
+
+.menu-link {
+  color: #0f0e0e;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding: 12px 4px;
+}
+
+/* MOBILE */
+.mobile-toggle .hamburger-btn {
+  background: transparent;
+  border: none;
+  color: #0b0b0b;
+}
+
+.mobile-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 86%;
+  max-width: 420px;
+  background: rgba(10, 10, 12, 0.98);
+  z-index: 9999;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.6);
+}
+
+.mobile-inner {
+  color: #0a0a0a;
+}
+
+.mobile-logo {
+  width: 56px;
+}
+
+.mobile-call,
+.mobile-loc {
+  color: #fff;
+  text-decoration: none;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+.mobile-nav-link {
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+}
+
+/* Mobile BOOK */
+.mobile-book-btn {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 16px;
+  font-weight: 700;
+}
+
+/* small screens adjustments */
+@media (max-width: 991px) {
+  .left-side,
+  .icons,
+  .center-menu {
+    display: none;
+  }
+
+  .brand-text {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  .brand-logo {
+    width: 56px;
+  }
+  .right-side {
+    width: auto;
+    padding-right: 20px;
+  }
+}
+
+/* extra small */
+@media (max-width: 575px) {
+  .brand-text {
+    display: none;
+  } /* show logo only on tiny screens */
+}
+/* Make all text white */
+.header-container,
+.header-container * {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Stylish, modern font (similar to screenshot) */
+
+.header-container {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo text (AESTHETICA) – use luxury font */
+.header-logo-text {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  letter-spacing: 6px;
+  font-weight: 400;
+  color: white !important;
+}
+
+/* Menu items */
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white !important;
+}
+
+/* Call & location text */
+.top-left-text {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white !important;
+}
+
+/* Book a Visit button */
+.book-visit-btn {
+  color: black;
+  border: 1px solid white !important;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 28px;
+}
+
+/* Hover animation */
+.nav-link:hover,
+.book-visit-btn:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
