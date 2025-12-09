@@ -20,6 +20,9 @@
   font-weight: 600;
   margin-bottom: 15px;
   letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .footer-logo {
@@ -49,4 +52,14 @@
 
 .social-icon:hover {
   background: #b38c5a;
+}
+
+
+/* mobile view: column layout */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: center;
+  }
 }

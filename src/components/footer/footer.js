@@ -25,7 +25,7 @@ const Footer = () => {
             <Link to="/about">About Us</Link>
             <Link to="/price-guide">Price Guide</Link>
             <Link to="/blog">Blog</Link>
-          </Col>
+          </Col> 
         </Row>
 
         {/* MAIN FOOTER CONTENT */}
